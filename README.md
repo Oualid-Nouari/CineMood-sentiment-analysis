@@ -129,11 +129,11 @@ This project was proudly developed by:
 - LinkedIn : https://www.linkedin.com/in/oualidnouari/
 
 ### HAMOUCHE OUSSAMA : 
-- Github : ...
+- Github : https://github.com/HamoucheOussama11
 - LinkedIn : https://www.linkedin.com/in/oussama-hamouche-a27580234/
 
 ### EL GHAZALI AMINE : 
-- Github : ... 
+- Github : https://github.com/amineelghazali
 - LinkedIn : https://www.linkedin.com/in/amine-el-ghazali-512684328/
 
 
