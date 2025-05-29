@@ -43,32 +43,32 @@ export default function ProjectInfoModal({ isOpen, onClose }: ProjectInfoModalPr
 
   const sections = [
     {
-      title: "Notre mission : Déchiffrer les émotions",
+      title: "Our Mission: Decoding Emotions",
       icon: <IconRocket className="w-7 h-7 text-sky-400" />,
-      content: "Bienvenue sur CineMood ! Cette application est une démonstration de la capacité de l'intelligence artificielle à comprendre la tonalité émotionnelle d'un texte. Nous nous concentrons sur les critiques de films pour illustrer cette technologie fascinante en action.",
+      content: "Welcome to our Sentiment Analyzer! This app is a demonstration of how Artificial Intelligence can understand the emotional tone behind text. We're focusing on movie reviews to show this cool tech in action.",
       bgColor: "bg-sky-600/[0.15]",
     },
     {
-      title: "Comment la magie opère",
+      title: "How the Magic Happens",
       icon: <IconBrain className="w-7 h-7 text-purple-400" />,
-      content: "Lorsque vous soumettez une critique :",
+      content: "When you submit a review:",
       list: [
-        "Votre texte est nettoyé – en supprimant des éléments comme le HTML et en le préparant pour l'IA.",
-        "Il est ensuite traité à l'aide de techniques de Traitement Automatique du Langage Naturel (NLP), y compris l'identification de marqueurs spéciaux pour la négation (comme « pas bon ») ou l'emphase.",
-        "Les plongements lexicaux (GloVe) convertissent vos mots en un format numérique que l'IA comprend.",
-        "Enfin, un modèle d'apprentissage automatique entraîné (Machine à Vecteurs de Support - SVM) prédit le sentiment : Positif, Négatif ou Neutre.",
-        "Le « score de confiance » indique à quel point l'IA est sûre. Un score inférieur à 0,4 pour Positif/Négatif suggère souvent une critique plus neutre ou mitigée dans notre configuration.",
+        "Your text is cleaned up – removing things like HTML and preparing it for the AI.",
+        "It's then processed using Natural Language Processing (NLP) techniques, including identifying special markers for negation (like 'not good') or emphasis.",
+        "Word embeddings (GloVe) convert your words into a numerical format the AI understands.",
+        "Finally, a trained Machine Learning model (Support Vector Machine - SVM) predicts the sentiment: Positive, Negative, or Neutral.",
+        "The 'Confidence Score' indicates how sure the AI is. A score below 0.4 for Positive/Negative often suggests a more Neutral or mixed review in our setup.",
       ],
       bgColor: "bg-purple-600/[0.15]",
     },
     {
-      title: "La technologie sous le capot",
+      title: "Tech Under the Hood",
       icon: <IconCode className="w-7 h-7 text-emerald-400" />,
-      content: "Ce projet est construit avec un mélange de technologies modernes :",
+      content: "This project is built with a blend of modern technologies:",
       list: [
-        "Frontend : Next.js (framework React) avec TypeScript & Tailwind CSS pour une expérience élégante et réactive.",
-        "API Backend : Python avec Flask, servant notre puissant modèle d'analyse des sentiments.",
-        "IA & NLP : NLTK pour le traitement de texte, Gensim pour les plongements lexicaux GloVe, et Scikit-learn pour le modèle de classification SVM. Le modèle a été entraîné sur l'ensemble de données IMDB de critiques de films.",
+        "Frontend: Next.js (React framework) with TypeScript & Tailwind CSS for a sleek, responsive experience.",
+        "Backend API: Python with Flask, serving our powerful sentiment analysis model.",
+        "AI & NLP: NLTK for text processing, Gensim for GloVe word embeddings, and Scikit-learn for the SVM classification model. The model was trained on the IMDB Dataset of movie reviews.",
       ],
       bgColor: "bg-emerald-600/[0.15]",
     }

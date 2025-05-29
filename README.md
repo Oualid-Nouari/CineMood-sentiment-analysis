@@ -136,5 +136,7 @@ This project was proudly developed by:
 - Github : https://github.com/amineelghazali
 - LinkedIn : https://www.linkedin.com/in/amine-el-ghazali-512684328/
 
+---
+# DEMO :  
 
 ![CineMood Demo GIF](./assets/CineMood-demo.gif)
