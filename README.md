@@ -10,7 +10,7 @@ This project was a collaborative effort by **NOUARI Oualid**, **HAMOUCHE Oussama
 
 * **Random Movie Prompts:** Displays a random movie poster and a question to inspire user reviews.
 * **Real-time Sentiment Prediction:** Analyzes user-submitted text and returns sentiment (Positive, Negative, Neutral).
-* **Interactive Results Modal:**
+* **Interactive Results Modal:**  
     * Clear display of the predicted sentiment with engaging SVG icons.
     * Non-technical explanations of the sentiment.
     * Visual representation of the AI's confidence score.
@@ -47,7 +47,7 @@ The project is organized into two main folders within the root `sentiment-analys
 
 ### Prerequisites
 
-* Node.js (v18.x or later recommended for Next.js 14+)
+* Node.js (v18 or later recommended for Next.js 14+)
 * npm (comes with Node.js) or yarn
 * Python (v3.8 - v3.10 recommended)
 * pip (Python package installer, comes with Python)
@@ -55,34 +55,33 @@ The project is organized into two main folders within the root `sentiment-analys
 ### 1. Backend Setup (Python Flask API)
 
 **Clone the repository and navigate to the backend directory :**
-git clone https://github.com/Oualid-Nouari/CineMood-sentiment-analysis.git
-cd CineMood-sentiment-analysis/model/ # Or your backend folder name
+git clone https://github.com/Oualid-Nouari/CineMood-sentiment-analysis.git  
+`cd CineMood-sentiment-analysis/model/` # Or your backend folder name
 
 **Create and activate a Python virtual environment :**
 
--> For macOS/Linux
-python3 -m venv sentiment-env
-source sentiment-env/bin/activate
+→ For macOS/Linux :  
+`python3 -m venv sentiment-env`  
+`source sentiment-env/bin/activate`
 
--> For Windows
-python -m venv sentiment-env
-.\sentiment-env\Scripts\activate
+→ For Windows :  
+`python -m venv sentiment-env`  
+`.\sentiment-env\Scripts\activate`
 
-Install the required Python packages:
-pip install -r requirements.txt
+Install the required Python packages:  
+`pip install -r requirements.txt`
 
 
 ### 2. Frontend Setup (Next.js App)
 
-Navigate to the frontend directory from the project root:
+Navigate to the frontend directory from the project root:  
+`cd ../frontend/` 
 
-cd ../frontend/ 
+Install the Node.js dependencies:  
+`npm install`
 
-Install the Node.js dependencies:
-npm install
-
-or if you use yarn : 
-yarn install
+or if you use yarn :  
+`yarn install`
 
 
 ## 🏃 Running the Application
@@ -90,15 +89,16 @@ You need to run both the backend API and the frontend application separately, in
 
 ### 1. Start the Backend (Flask API):
 - Open a terminal.
-- Navigate to your backend directory
-- Run the Flask app: python app.py
+- Navigate to your backend directory.
+- Run the Flask app: `python app.py`  
 (The API should now be running on http://localhost:5001).
 
 ### 2. Start the Frontend (Next.js App):
 - Open another terminal.
 - Navigate to your frontend directory.
-- Run the Next.js development server: npm run dev OR yarn dev
-(The frontend should now be accessible in your browser at http://localhost:5001).
+- Run the Next.js development server:  
+ `npm run dev` OR `yarn dev`
+(The frontend should now be accessible in your browser at http://localhost:3000).
 
 
 ## 🎮 How to Use
@@ -113,12 +113,12 @@ You need to run both the backend API and the frontend application separately, in
 
 
 ## 💡 "Behind the Project" - How It Works Briefly :
-CineMood uses a pre-trained Support Vector Machine (SVM) model to classify sentiment. When a review is submitted:
+CineMood uses a pre-trained Support Vector Machine (SVM) model to classify sentiment. When a review is submitted:  
 
-1. Text Preprocessing: The input is cleaned (HTML removal, lowercasing), tokenized, and lemmatized. Special care is taken to handle negations and potential sarcasm cues to improve understanding.
-2. Word Embeddings (GloVe): Cleaned words are transformed into numerical vectors using GloVe, capturing their semantic meaning.
-3. Sentiment Prediction: This vector representation is fed to the SVM model, which outputs probabilities for positive and negative classes.
-4. Classification: Based on these probabilities and a confidence threshold (if abs(P_positive - P_negative) < 0.4 in our setup, it's deemed Neutral), the final sentiment is determined.
+1. **Text Preprocessing :** The input is cleaned (HTML removal, lowercasing), tokenized, and lemmatized. Special care is taken to handle negations and potential sarcasm cues to improve understanding.
+2. **Word Embeddings (GloVe) :** Cleaned words are transformed into numerical vectors using GloVe, capturing their semantic meaning.
+3. **Sentiment Prediction :** This vector representation is fed to the SVM model, which outputs probabilities for positive and negative classes.
+4. **Classification :** Based on these probabilities and a confidence threshold (if abs(P_positive - P_negative) < 0.4 in our setup, it's deemed Neutral), the final sentiment is determined.
 5. Details about the project, technology, and methodology are also available in the "What this app's doing?" modal within the application.
 
 
