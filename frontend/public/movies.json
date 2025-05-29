@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What did you think of 'Inception' ?",
+    "poster": "/imgs/inception.jpg"
+  },
+  {
+    "question": "How did you feel about 'Interstellar' ?",
+    "poster": "/imgs/interstellar.jpg"
+  },
+  {
+    "question": "What’s your opinion on 'The Dark Knight' ?",
+    "poster": "/imgs/dark-knight.jpg"
+  },
+  {
+    "question": "Did you enjoy 'Joker' ?",
+    "poster": "/imgs/joker.jpg"
+  },
+  {
+    "question": "Thoughts on 'Oppenheimer' ?",
+    "poster": "/imgs/oppenheimer.jpg"
+  },
+  {
+    "question": "How would you rate 'The Matrix' ?",
+    "poster": "/imgs/matrix.jpg"
+  },
+  {
+    "question": "Did you like 'Fight Club' ?",
+    "poster": "/imgs/fight-club.jpg"
+  },
+  {
+    "question": "Your opinion on 'The Social Network' ?",
+    "poster": "/imgs/social-network.jpg"
+  },
+  {
+    "question": "What did you think of 'Parasite' ?",
+    "poster": "/imgs/parasite.jpg"
+  },
+  {
+    "question": "How was 'The Shawshank Redemption' for you ?",
+    "poster": "/imgs/shawshank.jpg"
+  }
+]

@@ -1,0 +1,49 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+*.env.local
+*.env.development.local
+*.env.production.local
+*.env.test.local
+# If you have any other local config files for Next.js, add them
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+* trứng
+* .Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+# Your Python virtual environment folder (IMPORTANT!)
+model/sentiment-env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Gensim data / GloVe models (These can be very large and should be downloaded by users)
+# If your 'gensim' folder inside 'emotions' contains downloaded models, ignore it.
+# Users can re-download them via gensim.downloader as in your app.py
+model/gensim/
+
+# Large Data Files (Consider if these are too big for GitHub)
+# If 'IMDB Dataset.csv' is very large (e.g., > 100MB), consider Git LFS or
+# providing a download link in your README instead of committing the file directly.
+# For now, I'll assume it's okay, but if it's huge, you might want to add:
+# emotions/IMDB Dataset.csv
+
+# IDE and OS specific
+.vscode/
+.idea/
+*.swp
+*~
